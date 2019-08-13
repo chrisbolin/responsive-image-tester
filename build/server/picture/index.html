@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Responsive Image Test - export srcset, source, picture, and more."
+    />
+    <title>Responsive Image Test</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+
+      img {
+        width: 100vw;
+      }
+
+      nav {
+        max-width: 100vmin;
+        margin: auto;
+      }
+
+      a {
+        color: blue;
+      }
+
+      p {
+        margin: 10px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div tabindex="-1" role="group" style="outline: none;">
+        <p><a href="/">home</a></p>
+        <div>
+          <picture
+            ><source
+              media="(max-width: 499px)"
+              srcset="/v600.jpg 600w, /v900.jpg 900w, /v1280.jpg 1280w"/>
+            <source
+              media="(min-width: 500px)"
+              srcset="
+                /h900.jpg   900w,
+                /h1200.jpg 1200w,
+                /h1600.jpg 1600w,
+                /h2400.jpg 2400w,
+                /h3200.jpg 3200w
+              "/>
+            <img src="/original.jpg" alt="sunset"
+          /></picture>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
