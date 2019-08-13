@@ -11,3 +11,16 @@ code {
 img {
   width: 100vw;
 }
+
+nav {
+  max-width: 100vmin;
+  margin: auto;
+}
+
+a {
+  color: blue;
+}
+
+p {
+  margin: 10px 5px;
+}

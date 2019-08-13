@@ -23,22 +23,38 @@
       img {
         width: 100vw;
       }
+
+      nav {
+        max-width: 100vmin;
+        margin: auto;
+      }
+
+      a {
+        color: blue;
+      }
+
+      p {
+        margin: 10px 5px;
+      }
     </style>
   </head>
   <body>
     <div id="root">
       <div tabindex="-1" role="group" style="outline: none;">
-        <img
-          srcset="
-            /h900.jpg   900w,
-            /h1200.jpg 1200w,
-            /h1600.jpg 1600w,
-            /h2400.jpg 2400w,
-            /h3200.jpg 3200w
-          "
-          src="/original.jpg"
-          alt="sunset"
-        />
+        <div>
+          <p><a href="/">home</a></p>
+          <img
+            srcset="
+              /h900.jpg   900w,
+              /h1200.jpg 1200w,
+              /h1600.jpg 1600w,
+              /h2400.jpg 2400w,
+              /h3200.jpg 3200w
+            "
+            src="/original.jpg"
+            alt="sunset"
+          />
+        </div>
       </div>
     </div>
   </body>
