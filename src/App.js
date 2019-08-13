@@ -2,11 +2,11 @@ import React from "react";
 import { Router } from "@reach/router";
 
 const srcSet = (widths, prefix) =>
-  widths.map(width => `${prefix}${width}.jpg ${width}w`).join(",\n");
+  widths.map(width => `/${prefix}${width}.jpg ${width}w`).join(",\n");
 
 const horizontalSrcSet = srcSet([900, 1200, 1600, 2400, 3200], "h");
 const verticalSrcSet = srcSet([600, 900, 1280], "v");
-const backup = "original.jpg";
+const backup = "/original.jpg";
 const alt = "sunset";
 
 const Home = () => <div>home</div>;

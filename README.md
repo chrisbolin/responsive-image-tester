@@ -1,1 +1,1 @@
-# Responsive Image Playground
+# Responsive Image Test
